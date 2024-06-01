@@ -1,0 +1,134 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the outer box */
+.outer-box {
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inner box styling */
+.inner-box {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+/* Header styling */
+.signup-header h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.signup-header p {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main body styling */
+.signup-body {
+    padding: 20px;
+}
+
+.signup-body p {
+    margin-bottom: 15px;
+}
+
+.signup-body label {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-body input[type="text"],
+.signup-body input[type="email"],
+.signup-body input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Submit button styling */
+.signup-body input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-body input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+.signup-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-footer p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.signup-footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Circle styling */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0.2);
+}
+
+.circle.c1 {
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    left: -30px;
+}
+
+.circle.c2 {
+    width: 150px;
+    height: 150px;
+    bottom: -50px;
+    right: -50px;
+}
