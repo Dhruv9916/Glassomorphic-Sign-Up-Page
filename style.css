@@ -1,134 +1,122 @@
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Set a background color for the body */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body{
+  font-family: "Lato", sans-serif;
 }
 
-/* Style for the outer box */
-.outer-box {
-    position: relative;
-    width: 400px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.outer-box{
+   width: 100vw;
+   height: 100vh;
+   
+   background: linear-gradient(to top left, #1e90ff, #b0e0e6);
+
+
+
+   
+
 }
 
-/* Inner box styling */
-.inner-box {
-    position: relative;
-    z-index: 1;
-    background-color: #ffffff;
+.inner-box{
+   width: 400px;
+   margin: 0 auto;
+   position: relative ;
+   top: 40%;
+   transform: translateY(-50%);
+
+   padding: 20px 40px;
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 2px 2px 5px #2773a5;
+   z-index: 2;
+
+   background: linear-gradient(to top left,#ffffffff,#ffffff33);   
+    /* opacity ka game h */
+
+   backdrop-filter: blur(8px);
+
+
+  
 }
 
-/* Header styling */
-.signup-header h1 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
+.signup-header h1{
+   font-size: 2.5rem;
+   color: #212121;
+
 }
 
-.signup-header p {
-    font-size: 0.9em;
-    color: #666;
-    text-align: center;
-    margin-bottom: 20px;
+.signup-header p{
+  font-size: 0.9rem;
+   color: #555;
 }
 
-/* Main body styling */
-.signup-body {
-    padding: 20px;
+.signup-body{
+   margin: 20px 0;
 }
 
-.signup-body p {
-    margin-bottom: 15px;
+.signup-body p{
+  margin: 9px 0;
 }
 
-.signup-body label {
-    font-size: 0.9em;
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
+.signup-body p label{
+  display: block;
+  margin: 6px 0;
+  font-weight: bold;
 }
 
-.signup-body input[type="text"],
-.signup-body input[type="email"],
-.signup-body input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 0 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 0.9em;
-    color: #333;
-}
-
-/* Submit button styling */
-.signup-body input[type="submit"] {
+.signup-body p input{
     width: 100%;
-    padding: 12px;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+
 }
 
-.signup-body input[type="submit"]:hover {
-    background-color: #0056b3;
+.signup-body p input[type= "submit"]
+{
+   background-color: #3498db;
+   border: none;
+   color: white; 
+   cursor: pointer;
 }
 
-/* Footer styling */
-.signup-footer {
-    text-align: center;
-    margin-top: 20px;
+.signup-body p input[type= "submit"]:hover{
+  background-color: #2773a5;
+
 }
 
-.signup-footer p {
-    font-size: 0.9em;
-    color: #666;
+.signup-footer p{
+  color: #555;
+  text-align: center;
+
 }
 
-.signup-footer a {
-    color: #007BFF;
-    text-decoration: none;
+.signup-footer p a{
+  color: #2773a5;
+  
 }
 
-.signup-footer a:hover {
-    text-decoration: underline;
+/* .circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+background: linear-gradient(to right,#ffffffaa,#ffffffff);
+position: absolute;
 }
 
-/* Circle styling */
-.circle {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(0, 123, 255, 0.2);
+.c1{
+  top: 100px;
+  left: 40px;
 }
+.c2{
+  bottom: 200px;
+  right: 50px;
+} */
 
-.circle.c1 {
-    width: 100px;
-    height: 100px;
-    top: -30px;
-    left: -30px;
-}
 
-.circle.c2 {
-    width: 150px;
-    height: 150px;
-    bottom: -50px;
-    right: -50px;
-}
